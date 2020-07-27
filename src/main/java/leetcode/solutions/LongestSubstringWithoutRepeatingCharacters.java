@@ -1,43 +1,37 @@
 package leetcode.Solutions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
-   Number leecode problem: 2
-   Link: https://leetcode.com/problems/add-two-numbers/
+   Number leecode problem: 3
+   Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
    
    Time Complexity: O(n)
    Space Complexity: O(n)
 */
 
-public class AddTwoNumbers{
+public class LongestSubstringWithoutRepeatingCharacters{
 	
-	public ListNode addTwoNumbers(ListNode l1, ListNode l2){
+	
+	public int addTwoNumbers(String s){
 		
-		ListNode res = new ListNode(0);
-		ListNode aux = res;
-		int sum = 0;
-		while(l1 != null && l2 != null){
-			// The max value can be 18 whis this you get the carry that will be 1 
-			sum/=10;
+		if(s.length() = 0) return 0;
+		
+		int res = 0;
+		Map<Character, Integer> map = new HashMap<>();
+		
+		for(int i = 0, j = 0; i < s.length(); i++){
 			
-			if(l1 != null){
-				sum+=l1.val;
-				l1 = l1.next;
+			if(map.containsKey(s.charAt(i))){
+				
+				j = Math.max(j, map.get(s.charAt(i)) + 1);
 			}
+			map.put(s.chartAt(i), i);
+			res = Math.max(res, i-j+1);
 			
-			if(l2 != null){
-				sum+=l2.val;
-				l2 = l2.next;
-			}
-			
-			// just store one digit if the number is 11 store 1
-			aux.next = ListNode(sum%10);
-			aux = aux.next;
-		}
-		// check if there is a last carry
-		if(sum/10 == 1){
-			aux.next = new ListNode(1);
 		}
 		
-		return res.next;
+		return res;
 	}
 }
