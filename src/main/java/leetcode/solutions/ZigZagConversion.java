@@ -2,7 +2,10 @@ package leetcode.solutions;
 
 
 /**
-
+ Number leecode problem: 6
+   https://leetcode.com/problems/zigzag-conversion/
+    Time Complexity: O(n)
+   Space Complexity: O(n)
 */
 public class ZigZagConversion{
 	
