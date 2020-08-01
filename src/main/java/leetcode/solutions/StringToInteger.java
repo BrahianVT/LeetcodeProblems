@@ -2,7 +2,7 @@ package leetcode.solutions;
 
 /**
  Number leecode problem: 8
-   https://leetcode.com/problems/reverse-integer/
+https://leetcode.com/problems/string-to-integer-atoi/
     Time Complexity: O(n)
    Space Complexity: O(1)
 */
