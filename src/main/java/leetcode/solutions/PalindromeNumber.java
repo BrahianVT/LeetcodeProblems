@@ -20,6 +20,6 @@ public PalindromeNumber{
 			x/=10;
 		}
 		
-		return (x == invert || x == inver/10);
+		return (x == invert || x == invert/10);
 	}
 }
