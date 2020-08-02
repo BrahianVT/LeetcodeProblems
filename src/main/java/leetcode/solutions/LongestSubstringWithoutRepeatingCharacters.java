@@ -14,7 +14,7 @@ import java.util.Map;
 public class LongestSubstringWithoutRepeatingCharacters{
 	
 	
-	public int addTwoNumbers(String s){
+	public int lengthOfLongestSubstring(String s){
 		
 		if(s.length() = 0) return 0;
 		
