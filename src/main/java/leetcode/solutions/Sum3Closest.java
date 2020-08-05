@@ -1,7 +1,7 @@
 package leetcode.Solutions;
 
 /**
-   Number leecode problem: 2
+   Number leecode problem: 16
    Link: https://leetcode.com/problems/3sum-closest/
    
    Time Complexity: O(n^2)
