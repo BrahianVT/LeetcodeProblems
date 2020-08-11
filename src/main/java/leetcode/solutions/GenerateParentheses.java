@@ -3,15 +3,12 @@ import java.util.*;
 
 /**
    Number leecode problem:22
-   Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+   Link: https://leetcode.com/problems/generate-parentheses/
    
-   Time Complexity: O(n)
+   Time Complexity: O(2 ^ 2n)
    Space Complexity: O(n)
 */
 
-
-    //O(2 ^ 2n)  e: O(n)
-		
 public class GenerateParentheses{
 	
 	 public List<String> generateParenthesis(int n) {
