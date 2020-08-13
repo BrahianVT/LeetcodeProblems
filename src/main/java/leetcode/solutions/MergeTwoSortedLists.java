@@ -6,8 +6,8 @@ package leetcode.Solutions;
 import java.util.*;
 
 /**
-   Number leecode problem:20
-   Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+   Number leecode problem:21
+   Link: https://leetcode.com/problems/merge-two-sorted-lists/
    
    Time Complexity: O(n)
    Space Complexity: O(n)
