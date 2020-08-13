@@ -28,7 +28,7 @@ public LongestCommonPrefix{
 			
 			if(longestComPre){
 				start = mid + 1;
-			} else {
+			} else {  longestComPre = true;
 				end = mid;
 			}
 		}
