@@ -31,9 +31,9 @@ public class LetterCombinationsPhone{
 		int i = digits.charAt(start) - '0'; 
 		
 		for(int j = 0; j < map[i].length; j++){
-			str.append(digits.charAt(start));
+			str.append(map[i][j]);
 			
-			backtracking(digits, map, j + 1, str, res);
+			backtracking(digits, map, start + 1, str, res);
 			str.deleteCharAt(str.length() - 1);
 		}
 	}
