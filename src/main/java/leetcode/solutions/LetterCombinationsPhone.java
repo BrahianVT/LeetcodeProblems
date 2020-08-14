@@ -33,7 +33,7 @@ public class LetterCombinationsPhone{
 		for(int j = 0; j < map[i].length; j++){
 			str.append(digits.charAt(start));
 			
-			backtracking)(digits, map, j + 1, str, res);
+			backtracking(digits, map, j + 1, str, res);
 			str.deleteCharAt(str.length() - 1);
 		}
 	}
