@@ -38,7 +38,7 @@ public class Sum4{
 			backtraking(nums, target, sum + nums[i], i + 1, res, list);
 			list.remove(list.size() -1);
 			
-			while(i < nums-1; && nums[i] == nums[i + 1]){ i++; }
+			while(i < nums.length -1; && nums[i] == nums[i + 1]){ i++; }
 		}
 	}
 }
