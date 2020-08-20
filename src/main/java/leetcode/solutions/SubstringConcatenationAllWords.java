@@ -40,7 +40,8 @@ public class SubstringConcatenationAllWords{
 						size++; 
 						if(size == word.length){
 							if(wordFreq.equals(cur)){ res.add(start); }
-							
+								
+							cur.put(arrayString[start], cur.get(arrayString[start], 0)- 1);
 							size--; start+=sizeWord;
 						}
 					}else {
