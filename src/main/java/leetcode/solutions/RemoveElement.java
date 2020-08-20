@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
    Number leecode problem:27
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+	https://leetcode.com/problems/remove-element/
    
    Time Complexity: O(n)
    Space Complexity: O(1)
