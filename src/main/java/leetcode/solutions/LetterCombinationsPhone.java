@@ -18,7 +18,7 @@ public class LetterCombinationsPhone{
 		List<String> res = new ArrayList<>();
 		char[][] map = {{},{},{'a','b','c'},{'d','e','f'},{'g','h','i'},{'j','k','l'},{'m','n','o'},{'p','q','r','s'},{'t','u','v'},{'w','x','y','z'}};
 		
-		backtracking(digits, map, start, new StringBuilder(), res);
+		backtracking(digits, map, 0, new StringBuilder(), res);
 		
 		return res;
 		
