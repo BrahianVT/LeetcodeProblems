@@ -35,8 +35,8 @@ public class SubstringConcatenationAllWords{
 					arrayString[j] = s.substring(j, j+sizeWord);
 					start = start == -1?j:start;
 					
-					if(wordFreq.containsKey(arrayString[i])){
-						cur.put(arrayString[i], cur.getOrDefault(arrayString[i],0)+1);
+					if(wordFreq.containsKey(arrayString[j])){
+						cur.put(arrayString[j], cur.getOrDefault(arrayString[j],0)+1);
 						size++; 
 						if(size == word.length){
 							if(wordFreq.equals(cur)){ res.add(start); }
