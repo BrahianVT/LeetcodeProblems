@@ -11,7 +11,7 @@ public LongestCommonPrefix{
 
     public String longestCommonPrefix(String[] strs) {
 		
-		if(strs == null || strs == null){  return ""; }
+		if(strs == null || strs.length == 0){  return ""; }
 		
 		int start = 0, end = strs[0].length();
 
