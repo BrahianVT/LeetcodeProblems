@@ -14,7 +14,8 @@ public class GenerateParentheses{
 	 public List<String> generateParenthesis(int n) {
 		List<String> res = new ArrayList();
 		
-		return backtracking(0,0,new StringBuilder(), n, res);
+		backtracking(0,0,new StringBuilder(), n, res);
+		 return res;
 	}
 	
 	private void backtracking(int open, int close, StringBuilder aux, int n, List<String> res){
@@ -28,7 +29,7 @@ public class GenerateParentheses{
 		}
 		
 		if(close < open){
-			backtracking(open, close, aux.append(")"), n, res);
+			backtracking(open, close+1, aux.append(")"), n, res);
 			aux.deleteCharAt(aux.length() - 1);
 		}
 	}
