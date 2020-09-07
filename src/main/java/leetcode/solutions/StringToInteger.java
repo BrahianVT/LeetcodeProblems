@@ -29,7 +29,7 @@ public class StringToInteger{
 		while(start < str.length() && str.charAt(start) >= '0' || str.charAt(start) <= '9'){
 			
 			
-			if(total > Integer.MAX_VALUE / 10 && (total == Integer.MAX_VALUE && str.charAt(start) - '0') > modMaxValue){
+			if(total > Integer.MAX_VALUE / 10 || (total == Integer.MAX_VALUE && str.charAt(start) - '0') > modMaxValue){
 				return(sign > 0)? Integer.MAX_VALUE: Integer.MIN_VALUE;
 			}
 			
