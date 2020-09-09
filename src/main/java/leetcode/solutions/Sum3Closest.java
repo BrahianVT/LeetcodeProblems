@@ -15,7 +15,7 @@ public class Sum3Closest{
 	
 		// the max difference it may contains
 		int minDiff = 200000;
-		
+		Arrays.sort(nums);
 		int res = 0, sum = 0;
 		
 		for(int i = 0; i <= nums.length -3; i++){
