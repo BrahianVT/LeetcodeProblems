@@ -30,7 +30,7 @@ public class AddTwoNumbers{
 			}
 			
 			// just store one digit if the number is 11 store 1
-			aux.next = ListNode(sum%10);
+			aux.next = new ListNode(sum%10);
 			aux = aux.next;
 		}
 		// check if there is a last carry
