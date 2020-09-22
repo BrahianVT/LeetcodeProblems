@@ -33,7 +33,8 @@ class Node {
 public class CloneGraph{
 	Map<Integer, Node> map = new HashMap<>();
 	public Node cloneGraph(Node node){
-			
+		
+		return clone(node);
 	}
 	
 	
