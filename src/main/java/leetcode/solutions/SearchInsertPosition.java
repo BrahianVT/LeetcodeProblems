@@ -4,7 +4,7 @@ package leetcode.solutions;
 import java.util.*;
 /**
  Number leecode problem: 35
-	https://leetcode.com/problems/search-in-rotated-sorted-array/
+	https://leetcode.com/problems/search-insert-position/
     Time Complexity: O(log n)
     Space Complexity: O(1)
 */

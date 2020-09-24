@@ -21,8 +21,8 @@ public class DivideTwoIntegers{
 		
 		boolean isNegative = (dividend < 0 )^( divisor < 0);
 		
-		if(dividend < 0){ dividend = -dividend; }
-		if(divisor < 0){ divisor = -divisor; }
+		if(dividend > 0){ dividend = -dividend; }
+		if(divisor > 0){ divisor = -divisor; }
 		
 		
 		return isNegative?-div(dividend, divisor):div(dividend, divisor);

@@ -15,7 +15,7 @@ public class Sum4{
 		List<List<Integer>> res = new ArrayList();
 		Arrays.sort(nums);
 		List<Integer> list = new ArrayList();
-		backtraking(nums, target, sum, 0, res, list);
+		backtraking(nums, target, 0, 0, res, list);
 		
 		return res; 
 	}

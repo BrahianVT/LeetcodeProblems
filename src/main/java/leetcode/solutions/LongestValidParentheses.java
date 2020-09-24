@@ -10,12 +10,12 @@ import java.util.*;
 
 public class LongestValidParentheses{
 	
-	int longestValidParentheses(string s) {
+	int longestValidParentheses(String s) {
 		
 		Stack<Integer> stack = new Stack();
 		
 		int longest = 0;
-		for(int i = 0; i < s.length; i++){
+		for(int i = 0; i < s.length(); i++){
 			char c = s.charAt(i);
 			if( c == '('){
 				stack.push(i);
@@ -23,7 +23,7 @@ public class LongestValidParentheses{
 				stack.push(i);
 			} else {
 				stack.pop();
-				longest = Math.max(i - (stack.isEmpty()?-1:stack.peak()), max);
+				longest = Math.max(i - (stack.isEmpty()?-1:stack.peek()), longest);
 			}
 		}
 		

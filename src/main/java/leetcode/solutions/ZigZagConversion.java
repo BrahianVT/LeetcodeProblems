@@ -39,7 +39,7 @@ public class ZigZagConversion{
 			sb[0].append(sb[t]);
 		}
 		
-		return sb[0].toString;
+		return sb[0].toString();
 	}
 	
 }

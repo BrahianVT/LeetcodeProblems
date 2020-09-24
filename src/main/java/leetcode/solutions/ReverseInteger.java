@@ -22,7 +22,7 @@ public class ReverseInteger{
 			// Validate the overflow
 			if(res != (aux - digit) /10){ return 0; }
 			
-			res = aux; x/10;
+			res = aux; x/=10;
 		}
 		
 		return res;
