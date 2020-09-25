@@ -11,7 +11,6 @@ import java.util.*;
 public class CriticalConnectionsNetwork{
 
 	int id = 0;
-	
 	public List<List<Integer>> criticalConnetions(int n, List<List<Integer>> connections){
 		int s = connections.size();
 		
