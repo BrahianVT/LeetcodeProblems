@@ -6,7 +6,7 @@ import java.util.*;
 	https://leetcode.com/problems/bus-routes/
     Time Complexity: O(E + V)
     Space Complexity: O(E + V)
-	because is always a constant 9
+
 */
 
 
