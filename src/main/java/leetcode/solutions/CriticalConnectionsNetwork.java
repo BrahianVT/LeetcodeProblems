@@ -27,8 +27,10 @@ public class CriticalConnectionsNetwork{
 		List<List<Integer>> res = new ArrayList();
 		
 		for(int i = 0; i < n; i++){
-			if(ids[i] == -1) 
+			if(ids[i] == -1) findComponents(i, ids, low, graph, i, res);
 		}
+		
+		return res;
 	}
 	
 	private void findComponents(int start, int[] ids, int[] low, List<List<Integer>> graph, int prev, List<List<Integer>> res){
