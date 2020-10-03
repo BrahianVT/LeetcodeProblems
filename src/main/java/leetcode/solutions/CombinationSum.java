@@ -26,7 +26,7 @@ public class CombinationSum{
 	private void backtracking(int[] candidates, int target, List<List<Integer>> res, List<Integer> aux, int start){
 		
 		if(target == 0){
-			res.add(new ArrayList(aux))
+			res.add(new ArrayList(aux));
 		} else if( targe < 0){
 			return;
 		} else {
