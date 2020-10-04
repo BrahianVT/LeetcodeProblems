@@ -3,9 +3,9 @@
 package leetcode.solutions;
 import java.util.*;
 /**
- Number leecode problem: 39
+ Number leecode problem: 46
 
-	https://leetcode.com/problems/subsets-ii/
+	https://leetcode.com/problems/permutations/
      Time Complexity: O(n^n)
     Space Complexity: O(n^n)  n: nums.length
 */
