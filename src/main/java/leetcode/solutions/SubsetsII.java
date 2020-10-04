@@ -5,8 +5,8 @@ import java.util.*;
  Number leecode problem: 39
 
 	https://leetcode.com/problems/subsets-ii/
-    Time Complexity: O()
-    Space Complexity: O()
+    Time Complexity: O(n^n)
+    Space Complexity: O(n^n)  n: nums.length
 */
 
 public class SubsetsII{
