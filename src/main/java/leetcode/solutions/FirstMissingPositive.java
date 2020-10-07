@@ -12,7 +12,7 @@ import java.util.*;
 
 public class FirstMissingPositive{
 	
-	public class int firstMissingPositive(int[] nums){
+	public int firstMissingPositive(int[] nums){
 		int n = nums.length;
 		
 		for(int i = 0; i < n; i++){
