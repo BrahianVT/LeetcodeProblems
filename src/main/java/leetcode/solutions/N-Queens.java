@@ -8,18 +8,20 @@ import java.util.*;
     Space Complexity: O(2^n)
 */
 public class N-Queens{
-	
+	char[] base;
+	int[][] coordinates ={{-1, 1},{-1, -1},{1, -1},{1, 1}};
 	public List<List<String>> solveNQueens(int n){
 		
 		List<List<String>> res = new ArrayList();
 		List<String> aux = new ArrayList();
 		List<int[]> coor = new ArrayList();
 		
+		for(int i = 0; i < n; i++){ base[i] = '.'; }
 		backtracking(res, aux, n, 0, new boolean[n], -2, coor);
 		
 		return res;
 	}
-	int[][] coordinates ={{-1, 1},{-1, -1},{1, -1},{1, 1}};
+	
 	
 	private void backtracking(List<List<String>> res, List<String> aux, int n, int cont, boolean[] visited, int prev, List<int[]> coor){
 		
@@ -32,7 +34,7 @@ public class N-Queens{
 				
 				coor.add(new int[]{cont, i});
 				visited[i] = true;
-				backtracking(res, queenAt(aux, i ,n), n, cont + 1, visited, i, coor);
+				backtracking(res, queenAt(aux, i), n, cont + 1, visited, i, coor);
 				aux.remove(aux.size() - 1);
 				coor.remove(coor.size() - 1);
 				visited[i] = false;
@@ -40,10 +42,10 @@ public class N-Queens{
 		}
 	}
 	
-	private List<String> queenAt(List<String> aux, int i, int n){
-		StringBuilder str = new StringBuilder();
-		for(int j = 0; j < n; j++){  str.append("."); }
-		str.replace(i, i + 1, "Q"); aux.add(str.toString());
+	private List<String> queenAt(List<String> aux, int i){
+		base[i] = 'Q';
+		aux.add(String.valueOf(base));
+		base[i] = '.';
 		return aux;
 	}
 	
