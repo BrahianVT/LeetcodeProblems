@@ -26,7 +26,7 @@ public class PermutationsII{
 		
 	}
 	
-	private void backtracking(List<List<Integer>> list, List<Integer> aux, boolean[] used, int[] used){
+	private void backtracking(List<List<Integer>> list, List<Integer> aux, boolean[] used, int[] nums){
 		
 		if(aux.size() == nums.length){ 
 			list.add(new ArrayList(aux)); return;
