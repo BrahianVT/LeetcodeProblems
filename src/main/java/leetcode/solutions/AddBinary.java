@@ -1,3 +1,5 @@
+package leetcode.solutions;
+import java.util.*;
 /**
  Number leecode problem: 67
 	https://leetcode.com/problems/add-binary/

@@ -1,4 +1,5 @@
-
+package leetcode.solutions;
+import java.util.*;
 /**
  Number leecode problem: 65
 	https://leetcode.com/problems/valid-number/

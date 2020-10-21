@@ -1,5 +1,6 @@
 
-
+package leetcode.solutions;
+import java.util.*;
 /**
  Number leecode problem: 66
 	https://leetcode.com/problems/plus-one/

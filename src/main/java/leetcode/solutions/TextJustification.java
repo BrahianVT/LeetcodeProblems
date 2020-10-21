@@ -1,11 +1,11 @@
+
+package leetcode.solutions;
+import java.util.*;
 /**
  Number leecode problem: 68
 	https://leetcode.com/problems/text-justification/
    
 */
-
-
-
 public class TextJustification{
 	
 	public List<String> fullJustify(String[] words, int maxWidth){
