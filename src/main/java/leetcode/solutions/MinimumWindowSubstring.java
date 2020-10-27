@@ -24,7 +24,7 @@ public MinimumWindowSubstring{
 			while(counter == 0){
 				if(end - start < minLen){
 					minLen = end -start;
-					start = start;
+					minStart = start;
 				}
 				char c2 = s.charAt(start);
 				map[c2]++; start++;
