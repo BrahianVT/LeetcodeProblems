@@ -40,7 +40,7 @@ public class CriticalConnectionsNetwork{
 			int to = graph.get(start).get(i);
 			if(to == prev) continue;
 			if(ids[to] == -1)findComponents(to, ids, low, graph, start, res);
-			
+			low[start] = Math.min(low[start], low[to]);
 			if(low[to] > ids[start]){
 				res.add(Arrays.asList(start, to));
 			}
