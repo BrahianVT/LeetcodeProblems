@@ -38,7 +38,7 @@ public class CloneGraph{
 	}
 	
 	
-	private Node clone graph(Node root){
+	private Node clone(Node root){
 		if(root == null){ return null; }
 		
 		if(map.containsKey(root.val)){ return map.get(root.val); }
