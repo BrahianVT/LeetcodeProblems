@@ -20,6 +20,9 @@ public class CombinationSum{
 		List<Integer> aux = new ArrayList(nums, target, res, aux, start);
 		
 		backtracking(sums, target);
+		
+		
+		return res;
 	}
 	
 	
