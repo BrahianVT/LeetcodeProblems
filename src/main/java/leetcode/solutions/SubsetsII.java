@@ -16,6 +16,9 @@ public class SubsetsII{
 		List<List<Integer>> res = new ArrayList();
 		List<Integer> aux = new ArrayList();
 		Arrays.sort(nums);
+		backtracking(nums, res, aux, 0);
+		
+		return res;
 	}
 	
 	private void backtracking(int[] nums, List<List<Integer>> res, List<Integer> aux, int start){
