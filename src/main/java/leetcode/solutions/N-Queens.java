@@ -52,14 +52,10 @@ public class N-Queens{
 	private boolean validateD(int depth, int i, List<int[]> coor){
 		for(int[] c: coor){
 			int diff = Math.abs(depth - c[0]);
-			if(diff == 1){ continue; }
-			else {
-				 if(coordinates[0][0] * diff + depth == c[0] && coordinates[0][1] * diff + i == c[1]) return false;
-				 if(coordinates[1][0] * diff + depth == c[0] && coordinates[1][1] * diff + i == c[1]) return false;
-				 if(coordinates[2][0] * diff + depth == c[0] && coordinates[2][1] * diff + i == c[1]) return false;
-               			 if(coordinates[3][0] * diff + depth == c[0] && coordinates[3][1] * diff + i == c[1]) return false;
-            }
-			}
+			if(coordinates[0][0] * diff + depth == c[0] && coordinates[0][1] * diff + i == c[1]) return false;
+			if(coordinates[1][0] * diff + depth == c[0] && coordinates[1][1] * diff + i == c[1]) return false;
+			if(coordinates[2][0] * diff + depth == c[0] && coordinates[2][1] * diff + i == c[1]) return false;
+            if(coordinates[3][0] * diff + depth == c[0] && coordinates[3][1] * diff + i == c[1]) return false;  
 		}
 		return true;
 	}

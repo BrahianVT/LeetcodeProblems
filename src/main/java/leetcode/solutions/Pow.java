@@ -1,5 +1,15 @@
 
 
+package leetcode.solutions;
+import java.util.*;
+/**
+ Number leecode problem: 50
+
+	https://leetcode.com/problems/powx-n/
+    Time Complexity: O(log n)
+    Space Complexity: O(log n)
+*/
+
 public class Pow{
 	public double myPow(double x, int n){
 		double temp = x;

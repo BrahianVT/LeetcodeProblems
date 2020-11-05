@@ -30,7 +30,7 @@ public class MultiplyStrings{
 		
 
 		for(int n : res){
-			if(!(n == 0 && ans.length() == 0))ans.append(p);			
+			if(!(n == 0 && ans.length() == 0))ans.append(n);			
 		}
 		
 		return res.length() == 0?"0":res.toString();

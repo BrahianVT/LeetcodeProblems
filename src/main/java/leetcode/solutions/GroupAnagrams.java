@@ -1,9 +1,9 @@
 package leetcode.solutions;
 import java.util.*;
 /**
- Number leecode problem: 45
+ Number leecode problem: 49
 
-	https://leetcode.com/problems/jump-game-ii/
+	https://leetcode.com/problems/group-anagrams/
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
@@ -28,7 +28,7 @@ public class GroupAnagrams{
 			}
 			
 			if(aux.containsKey(aux)){
-				map.get(aux).add(s);
+				res.get(aux).add(s);
 			} else {
 				map.put(aux, index);
 				res.add(new ArrayList());

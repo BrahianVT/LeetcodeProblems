@@ -1,7 +1,7 @@
 package leetcode.solutions;
 import java.util.*;
 /**
- Number leecode problem: 548
+ Number leecode problem: 48
 
 	https://leetcode.com/problems/rotate-image/
     Time Complexity: O(n^2)
@@ -24,12 +24,12 @@ public class RotateImage{
 	}
 	
 	
-	private void swap(int[][] matrix, inr fRow, int lRow){
+	private void swap(int[][] matrix, int fRow, int lRow){
 		
 		while(fRow < lRow){
 			int[] aux = matrix[lRow];
-			matrix[lRow] = matrix[fRow];
-			matrix[fRow] = aux;
+			matrix[lRow--] = matrix[fRow];
+			matrix[fRow++] = aux;
 		}
 	}
 }

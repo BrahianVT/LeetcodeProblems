@@ -13,9 +13,6 @@ import java.util.*;
 
 
 public class PermutationsII{
-	
-	
-	
 	public List<List<Integer>> permuteUnique(int[] nums){
 		
 		List<List<Integer>> res = new ArrayList();
@@ -24,6 +21,7 @@ public class PermutationsII{
 		
 		backtracking(res, aux, new boolean[nums.length]);
 		
+		return res;
 	}
 	
 	private void backtracking(List<List<Integer>> list, List<Integer> aux, boolean[] used, int[] nums){
