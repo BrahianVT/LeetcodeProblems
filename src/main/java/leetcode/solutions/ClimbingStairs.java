@@ -2,7 +2,7 @@ package leetcode.solutions;
 import java.util.*;
 /**
  Number leecode problem: 70
-	https://leetcode.com/problems/add-binary/
+	https://leetcode.com/problems/climbing-stairs/
     Time Complexity: O(n)
     Space Complexity: O(1)
 */
