@@ -16,11 +16,11 @@ public class TextJustification{
 			int totalChar = words[index].length;
 			int last = index + 1;
 			while(last < n){
-				if(totalChar+= words[last] + 1 > maxWidth)break;
+				if(totalChar + words[last] + 1 > maxWidth)break;
 				totalChar+=words[last].length() + 1;
 				last++;
 			}
-			int gaps = last - index + 1;
+			int gaps = last - index - 1;
 			StringBuilder aux = new StringBuilder();
 			
 			if(gaps == 0 || last == n){
@@ -38,7 +38,7 @@ public class TextJustification{
 					aux.append(words[i]);
 					aux.append(" ");
 					
-					for(int j = 0; j < spaces + (i - index < remaining?1:0; j++))
+					for(int j = 0; j < spaces + (i - index < remaining?1:0); j++)
 						aux.append(" ");
 				}
 				aux.append(words[last -1]);
