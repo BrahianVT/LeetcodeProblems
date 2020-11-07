@@ -14,7 +14,7 @@ public class MinimumPathSum {
 		if(grid.length == 0) return 0;
 		
 		int n = grid.length, m = grid[0].length; 
-		int dp[][] = new int[n][m];
+		int dp[][] = new int[n + 1][m + 1];
 		
 		int aux = 1000000;
 		for(int i = 0; i < n + 1; i++){ dp[i][0] = aux; }
@@ -24,7 +24,7 @@ public class MinimumPathSum {
 		
 		 for(int i = 1; i <= n; i++){
 			for(int j = 1; j <= m; j++){
-				int min = Math.min(dp[i - 1][j] + grid[i - 1][j - 1], dp[i][j - 1] + dp[i - 1][j - 1]);
+				int min = Math.min(dp[i - 1][j] + grid[i - 1][j - 1], dp[i][j - 1] + grid[i - 1][j - 1]);
 				dp[i][j]+=min;
 			}
 		 }
