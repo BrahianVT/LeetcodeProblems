@@ -23,7 +23,7 @@ public class LongestSubstringWithoutRepeatingCharacters{
 		Arrays.fill(map, -1);
 		for(int i = 0, j = 0; i < s.length(); i++){
 			int c = s.charAt(i); 
-			if( map[c] != 0){
+			if( map[c] != -1){
 				j = Math.max(j, map[c] + 1);
 			}
 			map[c] = i;
