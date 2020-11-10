@@ -3,7 +3,7 @@ package leetcode.solutions;
 import java.util.*;
 /**
  Number leecode problem: 81
-https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
  
     Time Complexity: O(n)
     Space Complexity: O(1)
