@@ -17,6 +17,8 @@ public class NetworkDelayTime{
 		for(int i = 0; i < times.length; i++){
 			adjacencyList.get(times[i][0]).add(new int[]{times[i][1], times[i][2]});
 		}
+		
+		return dijkstra(K, N, adjacencyList);
 	}
 	
 	
@@ -46,6 +48,7 @@ public class NetworkDelayTime{
 				double newDist = dist[node[0]] + edge[1];
 				if(newDist < dist[edge[0]]){
 					if(dist[edge[0]] == Double.POSITIVE_INFINITY){ auxSize++; }
+					dist[edge[0]] = newDist;
 					pq.offer(new int[]{edge[0], (int)newDist});
 				}
 			}
