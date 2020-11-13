@@ -30,10 +30,7 @@ public class Permutations{
 			res.add(new ArrayList(aux)); return;
 		} else {
 			for(int i = 0; i < nums.length; i++){
-				if(int i = 0; i < nums.length; i++){
-					continue;
-				}
-				
+				if(aux.contains(nums[i])){ continue; }
 				aux.add(nums[i]);
 				backtracking(nums, res, aux);
 				aux.remove(aux.size() -1);

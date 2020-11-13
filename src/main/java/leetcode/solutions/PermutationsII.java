@@ -6,8 +6,8 @@ import java.util.*;
  Number leecode problem: 47
 
 	https://leetcode.com/problems/permutations-ii/
-     Time Complexity: O(n^n)
-    Space Complexity: O(n^n)  n: nums.length
+     Time Complexity: O(n!*n)
+    Space Complexity: O(n!*n)  n: nums.length
 */
 
 
