@@ -7,7 +7,7 @@ import java.util.*;
 https://leetcode.com/problems/largest-rectangle-in-histogram/
  
     Time Complexity: O(n)
-    Space Complexity: O(1)
+    Space Complexity: O(n)
 	
 */
 
