@@ -11,19 +11,16 @@ https://leetcode.com/problems/restore-ip-addresses/
 	 
 	public List<String> restoreIpAddresses(String s) {
         List<String> res = new ArrayList();
-		
 		back(res, s ,new StringBuilder(), 0, 0);
 		return res;
 	}
 	
-	private void back(List<String> res, String s, StringBuilder aux, int pos, int sec){
-		
+	private void back(List<String> res, String s, StringBuilder aux, int pos, int sec){		
 		if(s.length() - pos > 3*(4 - sec))return;
 		if(s.length() == pos && sec == 4){ res.add(aux.toString()); }
 		
 		for(int i = 1; i <= 3; i++){
 			if(pos + i > s.length())return;
-			
 			String number = s.substring(i, i + pos);
 			if(number.length() > 1 && number.startsWith("0") ||  i == 3 && Integer.parseInt(number) > 255)continue;
 			back(res, s, sec == 0?aux.append(number): aux.append(".").append(number), pos + i, sec + 1);
