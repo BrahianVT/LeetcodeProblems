@@ -2,8 +2,8 @@
 package leetcode.solutions;
 import java.util.*;
 /**
- Number leecode problem: 95
-https://leetcode.com/problems/interleaving-string/
+ Number leecode problem: 98
+https://leetcode.com/problems/validate-binary-search-tree/
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
@@ -11,7 +11,7 @@ https://leetcode.com/problems/interleaving-string/
 public class ValidateBinarySearchTree{
 	public boolean isValidBST(TreeNode root) {
 			
-	
+	return is(root, null, null);
 	}
 	
 	public boolean isValid(TreeNode root, Integer low, Integer max){
