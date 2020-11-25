@@ -20,7 +20,7 @@ public class RecoverBinarySearchTree{
 					left.right = root; root = root.left;
 				} else left.right = null;
 			}
-			if(pre != null && root < pre.next){
+			if(pre != null && root.val < pre.next){
 				if(first == null)first = pre;
 				second = root;
 			}
