@@ -12,10 +12,13 @@ public class SimplifyPath{
 	public String simplyfyPath(String path){
 		Deque<String> stack = new LinkedList();
 		
-		for(String s : psth.split("/")){
+		for(String s : path.split("/")){
 			if(s.equals("..")){ stack.poll(); }
-			else if(!s.equals("")){ stack.push(s); }
+			else if(!s.equals("") || !s.equals(".")){ stack.push(s); }
 		}
+		
+		StringBuilder res = new StringBuilder();
+		if(stack.isEmpty()){ res.append("/"); return res.toString(); }
 		
 		while(!stack.isEmpty()){
 			res.append("/");
