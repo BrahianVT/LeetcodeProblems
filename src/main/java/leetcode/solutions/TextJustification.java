@@ -29,7 +29,7 @@ public class TextJustification{
 					aux.append(" ");
 				}
 				aux.deleteCharAt(aux.length() - 1);
-				while(aux.size() < maxWidth){ aux.append(" "); }
+				while(aux.length() < maxWidth){ aux.append(" "); }
 			} else {
 				int spaces = (maxWidth - totalChar) / gaps;
 				int remaining = (maxWidth - totalChar) % gaps;
