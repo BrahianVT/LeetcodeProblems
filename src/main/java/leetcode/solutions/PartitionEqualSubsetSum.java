@@ -2,7 +2,7 @@
 package leetcode.solutions;
 import java.util.*;
 /**
-	Number leecode problem: 934
+	Number leecode problem: 416
 	https://leetcode.com/problems/partition-equal-subset-sum/
     Time Complexity: O(n^2)
     Space Complexity: O(n^2)
