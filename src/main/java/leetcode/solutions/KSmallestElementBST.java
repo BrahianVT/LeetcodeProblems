@@ -1,7 +1,7 @@
 package leetcode.solutions;
 import java.util.*;
 /**
-	Number leecode problem: 680
+	Number leecode problem: 280
 	https://leetcode.com/problems/kth-smallest-element-in-a-bst/
     Time Complexity: O(n)
     Space Complexity: O(n)
