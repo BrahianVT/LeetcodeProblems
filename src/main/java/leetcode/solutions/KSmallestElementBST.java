@@ -7,9 +7,6 @@ import java.util.*;
     Space Complexity: O(n)
 */
 
-
-
-
 public class KSmallestElementBST{
 	
 	int res = -1, auxK = 0;
