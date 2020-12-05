@@ -32,8 +32,7 @@ public class ValidParentheses{
 				if(stack.isEmpty()){ return false; }
 				else if('[' != stack.pop()){ return false; }
 			}
-			
-			atack.append(c);
+			else atack.append(c);
 		}
 
 		
