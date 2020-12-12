@@ -18,7 +18,7 @@ public class InsertInterval{
 			res.add(new intervals[i]);
 		}
 		
-		for(; i < intervals.length && ; b >= intervals[i][0]; i++){
+		for(; i < intervals.length && intervals[i][0] <= b; i++){
 			a = Math.min(a, intervals[i][0]);
 			b = Math.max(b, intervals[i][1]);
 		}
