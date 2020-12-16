@@ -2,7 +2,7 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Number leecode problem: 973
-	https://leetcode.com/problems/rotate-array/
+	https://leetcode.com/problems/k-closest-points-to-origin
     Time Complexity: O(n)
     Space Complexity: O(1)
 */
