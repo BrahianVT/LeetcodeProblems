@@ -1,7 +1,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Number leecode problem: 189
+	Number leecode problem: 973
 	https://leetcode.com/problems/rotate-array/
     Time Complexity: O(n)
     Space Complexity: O(1)
