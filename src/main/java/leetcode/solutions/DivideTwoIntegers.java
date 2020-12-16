@@ -33,7 +33,7 @@ public class DivideTwoIntegers{
 		
 		int prevSum = divisor, curSum = divisor << 1, q = 1;
 		
-		while(divisor <= curSum && curSum < prevSum){
+		while(dividend <= curSum && curSum < prevSum){
 			prevSum = curSum; curSum <<= 1;  q <<= 1;
 		}
 		
