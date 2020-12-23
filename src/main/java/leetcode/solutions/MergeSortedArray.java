@@ -23,4 +23,20 @@ public class MergeSortedArray{
 				nums1[j--] = nums1[index1--];
 		}
 	}
+	
+	/*
+	 public void merge(int[] nums1, int m, int[] nums2, int n) {
+    
+        int s = nums1.length;
+        int total =  n-- + m-- - 1;
+        
+        while( n >= 0){
+            if(m >= 0 && nums1[m] > nums2[n]){
+                nums1[total--] = nums1[m--];
+            } else if(nums2[n] >= nums1[m] )
+            nums1[total--] = nums2[n--];
+        }   
+    }
+	
+	*/
 }
