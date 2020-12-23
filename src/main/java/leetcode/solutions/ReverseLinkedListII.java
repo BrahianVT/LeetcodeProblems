@@ -31,7 +31,7 @@ public class ReverseLinkedListII{
 			next = iter.next;
 			iter.next = prev;
 			prev = iter;
-			iter = iter.next;
+			iter = next;
 		}
 		
 		iter.next = prev;
