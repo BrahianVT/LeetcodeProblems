@@ -9,10 +9,11 @@ https://leetcode.com/problems/interleaving-string/
 public class InterleavingString{
 	public boolean isInterleave(String s1, String s2, String s3) {
 	
-		char[] c1 = s1.toCharArray(), s2.toCharArray(), s3.toCharArray();
-		int n = s1.length, c2 = s2.length;
+		char[] c1 = s1.toCharArray(), c2.toCharArray(), s3.toCharArray();
+		int n = s1.length, n2 = s2.length;
+		if(n + n2 != c3.length)return false;
+		return dfs(c1,c2,c3,0,0,0,new boolean[n + 1][n2 + 1]);
 	}
-	
 	
 	private boolean dfs(char[] c1,char[] c2,char[] c3, i, j, k, boolean[][] invalid){
 		if(invalid[i][j])return false;
