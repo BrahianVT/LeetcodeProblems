@@ -15,7 +15,7 @@ public class RecoverBinarySearchTree{
 		while(root != null){
 			if(root.left != null){
 				TreeNode left = root.left;
-				while(left.right != null && left.right != null)left = left.right;
+				while(left.right != null && left.right != root)left = left.right;
 				if(left.right == null){
 					left.right = root; root = root.left;
 				} else left.right = null;
