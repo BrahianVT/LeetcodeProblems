@@ -11,9 +11,10 @@ public class RotateArray{
 	public void rotate(int[] nums, int k) {
         int k = k%nums.length;
 		
+		
+		swap(nums, 0, nums.length -1);
 		swap(nums, 0, k -1);
 		swap(nums, k, nums.length -1);
-		swap(nums, 0, nums.length -1);
     }
 	
 	private swap(int[] nums, int s ,int e){
