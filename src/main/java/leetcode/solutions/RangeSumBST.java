@@ -14,8 +14,8 @@ import java.util.*;
 	public int rangeSumBST(TreeNode root, int low, int high){
 		if(root == null) return 0;
 		
-		if(root.val > high) rangeSumBST(root.left, low,right);
-		if(root.val < low) rangeSumBST(root.right, low, right);
+		if(root.val > high) return rangeSumBST(root.left, low,right);
+		if(root.val < low) return rangeSumBST(root.right, low, right);
 		
 		return rangeSumBST(root.left,low, high) + rangeSumBST(root.right, low, high) + root.val;
 	}
