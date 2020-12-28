@@ -24,7 +24,7 @@ public class TaskScheduler{
 			if(prev != null)pq.offer(prev);
 			Integer cur = pq.poll();
 			if(cur != null){
-					if( --cur > 0)map.put(time + k + 1, cur);
+					if( --cur > 0)map.put(time + n + 1, cur);
 				remaining--;
 			}
 			time++;
