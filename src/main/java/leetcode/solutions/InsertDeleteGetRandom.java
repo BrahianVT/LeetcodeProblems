@@ -18,7 +18,6 @@ public class InsertDeleteGetRandom{
 		for(Integer e: set){
 			if(index++ == ranIndex)return e;
 		}
-		
 		return -1;
 	}
 	
