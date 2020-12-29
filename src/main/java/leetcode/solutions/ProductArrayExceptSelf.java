@@ -3,7 +3,7 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Number leecode problem: 238
-	https://leetcode.com/problems/rotate-array/
+https://leetcode.com/problems/product-of-array-except-self/
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
