@@ -11,7 +11,7 @@ public class DesignAddSearchWordsDataStructure{
 	TrieNode root;
 	private class TrieNode{
 		boolean isEnd = false;
-		TrieNode[26] next;
+		TrieNode[] next = new TrieNode[26];
 	}
 	public DesignAddSearchWordsDataStructure(){ root = new TrieNode(); }
 	
