@@ -24,6 +24,7 @@ https://leetcode.com/problems/largest-rectangle-in-histogram/
 			} else {
 				int top = stack.pop();
 				max = Math.max(max, heights[top] * (stack.isEmpty()?i: i - stack.peek() -1));
+				i--;
 			}
 		}
 		
