@@ -17,7 +17,7 @@ public class BusRoutes{
 		
 		Map<Integer, ArrayList<<Integer>> graph = new HashMap<>();
 		
-		int res = 0;
+		int res = 0,n = routes.length;
 		if(S == T) return 0;
 		
 		for(int i = 0; i < n; i++){
