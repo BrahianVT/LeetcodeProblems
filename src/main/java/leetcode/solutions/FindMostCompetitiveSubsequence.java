@@ -1,8 +1,8 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Number leecode problem: 1679
-	https://leetcode.com/problems/max-number-of-k-sum-pairs/
+	Number leecode problem: 1673
+	https://leetcode.com/problems/find-the-most-competitive-subsequence/
     Time Complexity: O(n^2)
     Space Complexity: O(1)
 */
