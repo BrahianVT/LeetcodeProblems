@@ -11,6 +11,8 @@ public class RemoveInvalidParentheses{
 	public List<String> removeInvalidParentheses(String s) {
 		List<String> res = new ArrayList();
 		
+		remove(res, s.toCharArray(), 0,0,'(',')');
+		return res;
 	}
 	private void remove(List<String> res, char[] c , int iLast, int jLast, char open, char close){
 		int i = iLast , cont  = 0;
