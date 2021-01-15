@@ -7,7 +7,6 @@ import java.util.*;
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
-
 public class PairsSongsTotalDurationsDivisible60{
 	public int numPairsDivisibleBy60(int[] time){
 		int[] map = new int[60];
