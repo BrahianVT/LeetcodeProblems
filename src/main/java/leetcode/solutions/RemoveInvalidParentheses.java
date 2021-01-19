@@ -16,7 +16,7 @@ public class RemoveInvalidParentheses{
 	}
 	private void remove(List<String> res, char[] c , int iLast, int jLast, char open, char close){
 		int i = iLast , cont  = 0;
-		while(i < c.length; && cont >= 0){
+		while(i < c.length && cont >= 0){
 			if(c[i] == open)cont++;
 			if(c[i] == close)cont--;
 			i++;
