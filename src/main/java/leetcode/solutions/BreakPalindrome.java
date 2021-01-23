@@ -14,7 +14,7 @@ public class BreakPalindrome{
 		for(int i = 0; i < pal.length; i++){
 			if(pal[i] != 'a'){
 				if(pal.length%2 == 1 && i == pal.length/2 && pal[pal.length-1] == 'a')pal[pal.length -1] = 'b';
-				else pal[i] == 'a';
+				else pal[i] = 'a';
 				return String.valueOf(pal);
 			}
 		}
