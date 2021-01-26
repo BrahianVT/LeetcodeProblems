@@ -11,7 +11,6 @@ import java.util.*;
 public class SearchMatrixII{
 	public boolean searchMatrix(int[][] matrix,int target){
 		int s = 0, end = matrix[0] -1;
-		
 		while(s < matrix.length && end >= 0){
 			int m = matrix[s][end];
 			if(m == target)return true;
