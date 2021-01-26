@@ -12,6 +12,8 @@ public class SubtreeAnotherTree{
 	
 	public boolean isSubTree(TreeNode s, TreeNode t){
 		if(s == null)return false;
+		if(isSame(s,t))return true;
+		return isSubTree(s.left, t.left) && isSubTree(s.right, t.right);
 	}
 	
 	private boolean isSame(TreeNode s, TreeNode t){
