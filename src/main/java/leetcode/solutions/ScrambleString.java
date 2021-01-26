@@ -24,7 +24,7 @@ import java.util.*;
 			   return true;
 			
 			if(isScramble(s1.substring(0,i), s2.substring(s - i)) &&
-			   isScramble(s1.substring(i), s2.substring(0, s - 1)))
+			   isScramble(s1.substring(i), s2.substring(0, s - i)))
 			   return true;
 		}
 	}

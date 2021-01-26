@@ -18,7 +18,7 @@ public class ShortestBridge{
 			for(int j = 0; i < a[0].length; j++){
 				if(a[i][j] == 1){
 					flag = true;
-					dfs(a, int i, int j);
+					dfs(a, i, j, queue);
 					break;
 				}
 			}
@@ -51,7 +51,7 @@ public class ShortestBridge{
 		if(i < 0 || i == a.length || j < 0 || j == a[0].length || a[i][j] != 1)return;
 		
 		a[i][j] = -1;
-		queue.offer(new int{a[i],[j]});
+		queue.offer(new int{i, j });
 		dfs(a, i + 1, j, queue);
 		dfs(a, i - 1, j, queue);
 		dfs(a, i, j - 1, queue);
