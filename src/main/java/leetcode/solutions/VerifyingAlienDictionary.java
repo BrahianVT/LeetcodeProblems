@@ -31,7 +31,7 @@ public class VerifyingAlienDictionary{
 		int min = Math.min(n1, n2);
 		
 		for(int i = 0; i < min; i++){
-			if(c1[i] - 'a' != c2[i]){
+			if(c1[i] - 'a' != c2[i] -'a'){
 				return map[c1[i] - 'a'] < map[c2[i] - 'a'];
 			}
 		}
