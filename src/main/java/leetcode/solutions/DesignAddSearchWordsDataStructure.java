@@ -17,7 +17,7 @@ public class DesignAddSearchWordsDataStructure{
 	
 	public TrieNode addWord(TreeNode root, String word, int start){
 		if(root == null )root = new TrieNode();
-		if(start == word.length()){ root.isEnd = true; }
+		if(start == word.length()){ root.isEnd = true; return root; }
 		char c = word.charAt(start);
 		root.next[ c - 'a'] = addWord(root.next[c -'a'], word, start+1);
 		return root;
