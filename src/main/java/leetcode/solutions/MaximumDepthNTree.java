@@ -1,13 +1,13 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Number leecode problem: 729
-	https://leetcode.com/problems/my-calendar-i/
-    Time Complexity: O(log n)
+	Number leecode problem: 559
+	https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+    Time Complexity: O(n)
     Space Complexity: O(n)
 */
 
-public class MaximumDepthNTree{
+public class MaximumDepthNTree {
 	public int maxDepth(Node root){
 		if(root == null || root.children.size() == 0)return root == null?0:1;
 		int max = 0;
