@@ -19,7 +19,7 @@ public class IntervalListIntersections{
 		while(i < A.length && j < B.length){
 			if(B[j][0] <= A[i][1] && B[j][0] >= A[i][0] || A[i][0] <= B[j][1] && A[i][0] >= B[j][0]){
 				int a = Math.max(A[i][0], B[j][0]);
-				int b = Math.max(A[i][1], B[j][1]);
+				int b = Math.min(A[i][1], B[j][1]);
 				res.add(new int[]{a, b});
 			}
 			

@@ -17,7 +17,7 @@ public class FirstBadVersion extends VersionControl {
 			if(isBadVersion(m)){
 					e = m;
 			} else{
-				s = m +1;
+				start = m +1;
 			}
 		}
 			return start;

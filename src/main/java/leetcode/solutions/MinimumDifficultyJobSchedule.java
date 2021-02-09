@@ -18,7 +18,7 @@ public class MinimumDifficultyJobSchedule{
 	}
 	
 	private int dfs(int[] jobs, int d, int start, int[][] dp){
-		int n = nums.length;
+		int n = jobs.length;
 		if(d == 0 && start == n)return 0;
 		if(d == 0 || start == n)return Integer.MAX_VALUE;
 		if(dp[n][start] == -1)return dp[n][start];
