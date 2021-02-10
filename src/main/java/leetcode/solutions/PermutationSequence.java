@@ -18,7 +18,7 @@ public class PermutationSequence{
 		
 		int[] factorial = new int[n]; factorial[0] = 1;
 		
-		for(int i = 1; i < n; i++){ factorial[i] = factorial[i] * i; }
+		for(int i = 1; i < n; i++){ factorial[i] = factorial[i-1] * i; }
 		
 		k --; StringBuilder res = new StringBuilder();
 		for(int i = n - 1; i >= 0; i--){
