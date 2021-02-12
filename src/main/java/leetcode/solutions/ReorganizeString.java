@@ -23,11 +23,19 @@ public class ReorganizeString{
 		char[] res = new char[s.length()];
 		int j = 0;
 		while(map[letter] > 0){
-			if(j >= res.length)j= 1;
-			res[j] = (char)(i + 'a');
-			j+=2;
-			map[i]--;
+			res[j] = (char)( letter + 'a');
+			j+=2; map[letter]--;
 		}
+		
+		for(int i = 0; i < map.length; i++){
+		      while(map[i] > 0){
+		      	if(j >= res.length)j= 1;
+		      		res[j] = (char)(i + 'a');
+		      		j+=2;
+		     		 map[i]--;
+		  		}
+		}
+		
 		return String.valueOf(res);
 	}
 }
