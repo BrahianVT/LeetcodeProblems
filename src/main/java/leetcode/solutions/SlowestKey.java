@@ -2,7 +2,7 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Number leecode problem: 1629
-	https://leetcode.com/problems/sudoku-solver/
+	https://leetcode.com/problems/slowest-key/
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
