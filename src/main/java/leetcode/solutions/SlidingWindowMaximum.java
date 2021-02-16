@@ -14,7 +14,7 @@ public class SlidingWindowMaximum{
 		for(int i = 1; i < n; i++){
 			left[i] = i%k==0?nums[i]:Math.max(nums[i], nums[i-1]);
 			int j = n - i - 1;
-			right[i] = j%k==0?nums[j]:Math.max(nums[j], nums[j-1]);
+			right[i] = j%k==0?nums[j]:Math.max(nums[j], nums[j+1]);
 		}
 		
 		int[] res = new int[n -k +1];
