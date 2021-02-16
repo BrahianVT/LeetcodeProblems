@@ -22,7 +22,7 @@ public class SimplifyPath{
 		
 		while(!stack.isEmpty()){
 			res.append("/");
-			res.append(stack.pollLast());
+			res.append(stack.pollFirst());
 		}
 		
 		return res.toString();
