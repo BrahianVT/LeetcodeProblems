@@ -1,7 +1,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Number leecode problem: 1376
+	Number leecode problem: 952
 	https://leetcode.com/problems/largest-component-size-by-common-factor/
     Time Complexity: O(N*sqrt(W)) 
     Space Complexity: O(n)
