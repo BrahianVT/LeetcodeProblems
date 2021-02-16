@@ -18,7 +18,7 @@ public class SearchSuggestionsSystem{
 			List<String> aux = new ArrayList();
 			if(start == products.length){for(; i < searchWord.length; i++) res.add(new ArrayList(aux)); continue; }
 			for(; start < products.length && products[start].indexOf(sub.toString()) != -1 && aux.size() < 3; start++)
-				aux.append(products[start]);
+				aux.add(products[start]);
 			
 			res.add(aux);
 		}
