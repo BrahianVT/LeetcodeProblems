@@ -30,7 +30,7 @@ public class SudokuSolver{
 		back(board, rows, cols, sectors, 0, 0);
 	}
 	
-	int[][] sec{{1,2,3},{4,5,6},{7,8,9}};
+	int[][] sec = {{1,2,3},{4,5,6},{7,8,9}};
 	private boolean back(char[][] board, boolean[][] rows, boolean[][] cols, boolean[][] sectors,int i , int j){
 		if(i < board.length - 1 && j == cols[0].length){ i++; j = 0;}
 		if(i == board.length -1 && j == cols[0].length){ return true; }
