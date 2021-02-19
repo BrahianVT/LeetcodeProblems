@@ -11,9 +11,7 @@ import java.util.*;
 
 
 public class ValidSudoku{
-	
 	public boolean isValidSudoku(char[][] board){
-		
 		Set<Character> val  = new HashSet<Character>();
 		
 		for(char[] row: board){
@@ -35,28 +33,27 @@ public class ValidSudoku{
 		for(int i = 0; i < 3; i++){
 			for(int j = 0; j < 3; j++){
 				int i2 = i + 2*i, j2 = j + 2*j;
-				
 				val.clear();
 				if(val.contains(board[i2][j2]) && board[i2][j2] != '.') return false;
-				val.add(board[i2][j2]);
-				if(val.contains(board[i2][j2 + 1]) && board[i2][j2 + 1] != '.')return true;
-				val.add(board[i2][j2 + 1]);
+					val.add(board[i2][j2]);
+				if(val.contains(board[i2][j2 + 1]) && board[i2][j2 + 1] != '.')return false;
+					val.add(board[i2][j2 + 1]);
 				if(val.contains(board[i2][j2 + 2]) && board[i2][j2 + 2] != '.') return false;
                 val.add(board[i2][j2 + 2]); 
                
                 if(val.contains(board[i2 + 1][j2]) && board[i2 + 1][j2] != '.') return false;
-                val.add(board[i2 + 1][j2]); 
+                	val.add(board[i2 + 1][j2]); 
                 if(val.contains(board[i2 + 1][j2 + 1]) && board[i2 + 1][j2 + 1] != '.') return false;
-                val.add(board[i2 + 1][j2 + 1]); 
+                	val.add(board[i2 + 1][j2 + 1]); 
                 if(val.contains(board[i2 + 1][j2 + 2]) && board[i2 + 1][j2 + 2] != '.') return false;
-                val.add(board[i2 + 1][j2 + 2]); 
+                	val.add(board[i2 + 1][j2 + 2]); 
                 
-                if(val.contains(board[i2 + 2][j2]) && board[i2 + 2][j2] != '.') return false;
-                val.add(board[i2][j2 + 2]); 
+               	if(val.contains(board[i2 + 2][j2]) && board[i2 + 2][j2] != '.') return false;
+                	val.add(board[i2][j2 + 2]); 
                 if(val.contains(board[i2 + 2][j2 + 1]) && board[i2 + 2][j2 + 1] != '.') return false;
-                val.add(board[i2 + 2][j2 + 1]); 
+                	val.add(board[i2 + 2][j2 + 1]); 
                 if(val.contains(board[i2 +2][j2 +2]) && board[i2 + 2][j2 + 2] != '.') return false;
-                val.add(board[i2 + 2][j2 +2]); 
+                	val.add(board[i2 + 2][j2 +2]); 
 			}
 		}
 		
