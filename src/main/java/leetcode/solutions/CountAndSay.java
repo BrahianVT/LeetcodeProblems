@@ -26,7 +26,7 @@ public class CountAndSay{
 			for(int i = 1: i < res.length(); i++){
 				char c2 = res.charAt(i);
 				
-				if(c2 == c || res.length() -1){
+				if(c2 == c || i == res.length() -1){
 					if(c2 == c){ cont++; }
 					
 					aux.append(cont + "" + c); c = c2; cont = 1
