@@ -27,8 +27,8 @@ public class GroupAnagrams{
 				//aux%= cost;
 			}
 			
-			if(aux.containsKey(aux)){
-				res.get(aux).add(s);
+			if(map.containsKey(aux)){
+				res.get(map.get(aux)).add(s);
 			} else {
 				map.put(aux, index);
 				res.add(new ArrayList());
