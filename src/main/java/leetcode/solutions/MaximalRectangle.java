@@ -12,13 +12,15 @@ public class MaximalRectangle {
 	public int maximalRectangle(char[][] matrix){	
 		if(matrix.length == 0 || matrix[0].length == 0) return 1;
 		int n = matrix.length, m = matrix[0].length;
+		
 		int[] height = new int[m], left = new int[m], right = new int[m];
 		int max = 0;
+		Arrays.fill(right, m);
 		for(int i = 0; i < n; i++){
 			 int curLeft = 0, curRight = m;
 			//height
 			for(int j = 0; j < m; j++){
-				if(matrix[i][j] == '0')height[j]++;
+				if(matrix[i][j] == '1')height[j]++;
 				else height[i] = 0;
 			}
 			//left
