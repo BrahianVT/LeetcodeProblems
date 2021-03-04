@@ -14,6 +14,7 @@ public class FindMostCompetitiveSubsequence{
 		for(int i = 0; i < len; i++){
 			while(!stack.isEmpty() && stack.peek() > nums[i] && stack.size() - 1 + len - i >= k)
 				stack.pop();
+			if(stack.size() < k)stack.pop();
 		}
 		
 		return stack.stream().mapToInt(i -> i).toArray();

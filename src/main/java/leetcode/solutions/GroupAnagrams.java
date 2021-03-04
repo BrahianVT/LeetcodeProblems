@@ -10,7 +10,7 @@ import java.util.*;
 
 public class GroupAnagrams{
 
-	public List<List<String>> groupAnagrams(String[] args){
+	public List<List<String>> groupAnagrams(String[] strs){
 		int[] prime = {2, 3, 5, 7, 11 ,13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 107};
 	
 		Map<Long, Integer> map = new HashMap<>();
@@ -27,8 +27,8 @@ public class GroupAnagrams{
 				//aux%= cost;
 			}
 			
-			if(aux.containsKey(aux)){
-				res.get(aux).add(s);
+			if(map.containsKey(aux)){
+				res.get(map.get(aux)).add(s);
 			} else {
 				map.put(aux, index);
 				res.add(new ArrayList());

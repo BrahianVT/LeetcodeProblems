@@ -25,7 +25,7 @@ public class DesignAddSearchWordsDataStructure{
 	public void addWord(String word){
 		root = addWord(root, word, 0)
 	}
-	public boolean search(String word){}
+	public boolean search(String word){
 		return search(word, root, 0);
 	}
 	

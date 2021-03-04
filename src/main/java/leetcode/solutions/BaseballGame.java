@@ -13,7 +13,8 @@ public class BaseballGame{
 		int res = 0;
 		for(String o: ops){
 			case "+":
-				Integer prev = s.pop(), next = prev + s.peek();
+				Integer prev = s.pop(), next = prev + s.peek(); 
+				s.push(prev); s.push(next);
 			break;
 			case "D":
 				s.push(s.peek() * 2);

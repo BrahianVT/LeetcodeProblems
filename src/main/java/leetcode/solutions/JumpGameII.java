@@ -23,6 +23,6 @@ public class JumpGameII{
 			}
 		}
 		
-		returb res++;
+		return res;
 	}
 }

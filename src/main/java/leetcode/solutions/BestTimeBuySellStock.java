@@ -18,6 +18,7 @@ public class BestTimeBuySellStock{
 			}
 			min = Math.min(min, prices[i]);
 		}
+		return res;
 	}
 	
 }

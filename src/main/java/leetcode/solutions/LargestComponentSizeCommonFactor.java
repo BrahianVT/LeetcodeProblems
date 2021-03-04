@@ -31,7 +31,7 @@ public class LargestComponentSizeCommonFactor{
 		int res = 0;
 		Map<Integer,Integer> map = new HashMap<>();
 		for(int n: A){
-			int i = p[n];
+			int i = get(n);
 			map.put(i, map.getOrDefault(i, 0) + 1);
 			res = Math.max(res, map.get(i));
 		}
