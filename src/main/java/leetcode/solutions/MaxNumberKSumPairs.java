@@ -16,7 +16,7 @@ public class MaxNumberKSumPairs{
 			if(nums[i] + nums[j] > k)j--;
 			else if(nums[i] + nums[j] < k)i++;
 			else{
-				i++;j++; res++;
+				i++;j--; res++;
 			}
 		}
 		
