@@ -32,6 +32,6 @@ public MinimumWindowSubstring{
 			}
 		}
 		
-		return minLen == Integer.MAX_VALUE?"":s.substring(minStart, minStart + end);
+		return minLen == Integer.MAX_VALUE?"":s.substring(minStart, minStart + minLen);
 	}
 }
