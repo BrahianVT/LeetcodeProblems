@@ -15,8 +15,10 @@ public class MaximumUnitsTruck{
 			int size = boxTypes[index][0];
 			if(size <= truckSize){
 				res+= size * boxTypes[index][1];
+				truckSize-= size;
 			} else {
 				res+= truckSize * boxTypes[index][1];
+				truckSize = 0;
 			}
 			index++;
 		}
