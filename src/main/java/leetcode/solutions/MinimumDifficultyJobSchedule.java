@@ -14,7 +14,7 @@ public class MinimumDifficultyJobSchedule{
 		if(d > n)return 0;
 		int[][]dp = new int[n][ d + 1];
 		for(int[] row : dp){ Arrays.fill(row, -1);}
-		
+		return dfs(jobs, 0, 0, dp);
 	}
 	
 	private int dfs(int[] jobs, int d, int start, int[][] dp){
