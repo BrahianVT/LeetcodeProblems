@@ -21,7 +21,7 @@ public class MinimumDifficultyJobSchedule{
 		int n = jobs.length;
 		if(d == 0 && start == n)return 0;
 		if(d == 0 || start == n)return Integer.MAX_VALUE;
-		if(dp[n][start] == -1)return dp[n][start];
+		if(dp[start][d] != -1)return dp[n][start];
 		int curMax = jobs[start];
 		int minVal = Integer.MAX_VALUE;
 
@@ -29,8 +29,8 @@ public class MinimumDifficultyJobSchedule{
 			curMax = Math.max(curMax, jobs[i]);
 			int temp =  dfs(jobs, d- 1, i + 1, dp);
 			if(temp != Integer.MAX_VALUE)
-				minVal = Math.max(minVal, minVal + curMax);
+				minVal = Math.min(minVal, minVal + curMax);
 		}
-		return dp[n][start] = minVal;
+		return dp[start][d] = minVal;
 	}
 }
