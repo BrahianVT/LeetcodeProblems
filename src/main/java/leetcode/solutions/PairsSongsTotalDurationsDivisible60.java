@@ -9,6 +9,7 @@ import java.util.*;
 */
 public class PairsSongsTotalDurationsDivisible60{
 	public int numPairsDivisibleBy60(int[] time){
+		int res = 0;
 		int[] map = new int[60];
 		for(int t : time){
 			res+= map[(600 - t)%60];
