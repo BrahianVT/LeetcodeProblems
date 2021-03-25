@@ -23,7 +23,7 @@ public class DesignAddSearchWordsDataStructure{
 		return root;
 	}
 	public void addWord(String word){
-		root = addWord(root, word, 0)
+		root = addWord(root, word, 0);
 	}
 	public boolean search(String word){
 		return search(word, root, 0);
