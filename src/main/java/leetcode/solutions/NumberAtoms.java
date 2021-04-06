@@ -23,7 +23,7 @@ public class NumberAtoms{
 		TreeMap<String, Integer> map = new TreeMap<>();
 		while(i < input.length){
 			if(input[i] >= 'a'){ 
-				aux.append(input[i++]); 
+				auxF.append(input[i++]); 
 				if(i == input.length || input[i] == ')')
 					map.put(auxF.toString(), map.getOrDefault(auxF.toString(), 0) + 1);
 			} else if(input[i] >= 'A' && input[i] <= 'B'){
@@ -49,7 +49,7 @@ public class NumberAtoms{
 				if(num == 0)num = 1;
 				for(Map.Entry<String, Integer> e : aux.entrySet()){
 					String k = e.getKey(); int v = e.getValue();
-					map.put(k,  num * v + map.getOrDefault(k, 0))
+					map.put(k,  num * v + map.getOrDefault(k, 0));
 				}
 			} else { i++; return map; }
 		}
