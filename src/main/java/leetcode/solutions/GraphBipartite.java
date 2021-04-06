@@ -21,7 +21,7 @@ public class GraphBipartite{
 	private boolean isBipartite(int[][] graph, int s , int color, int[] colors){
 		colors[s] = color;
 		for(int node : graph[s]){
-			if(colors[s] == color || colors[s] == 0 && !isBipartite(graph, s, color * -1))return false;
+			if(colors[node] == color || colors[s] == 0 && !isBipartite(graph, s, color * -1))return false;
 		}
 		return true;
 	}
