@@ -11,7 +11,7 @@ import java.util.*;
    Space Complexity: O(1)
 */
 
-public ImplementStr{
+public class ImplementStr{
 	
 	public int strStr(String haystack, String needle) {
 		if(needle == null || needle == 0 || needle.length() < haystack.length()){ return -1; }
