@@ -16,7 +16,7 @@ public class LongestIncreasingPathMatrix{
 				back(matrix, i, j, dp, 0);
 			}
 		}
-		return aux;
+		return max;
 	}
 	
 	public int back(int[][] matrix, int i , int j , int[][] dp, int aux){
