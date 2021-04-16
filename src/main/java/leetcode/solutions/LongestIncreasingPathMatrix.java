@@ -16,10 +16,10 @@ public class LongestIncreasingPathMatrix{
 				back(matrix, i, j, dp, 0);
 			}
 		}
-		return aux;
+		return max;
 	}
 	
-	public void back(int[][] matrix, int i , int j , int[][] dp, int aux){
+	public int back(int[][] matrix, int i , int j , int[][] dp, int aux){
 		if(dp[i][j] != 0)return dp[i][j] + aux;
 		int a = matrix[i][j]; matrix[i][j] = 0;
 		
