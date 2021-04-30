@@ -18,7 +18,7 @@ public class CriticalConnectionsNetwork{
 		
 		for(int i = 0; i < n; i++){ graph.add(new ArrayList()); }
 		for(int i = 0; i < connections.size(); i++){
-			int from = connections.get(i)[0], to = connections.get(i)[1];
+			int from = connections.get(i).get(0), to = connections.get(i).get(1);
 			graph.get(from).add(to);  graph.get(to).add(from);
 		}
 		
