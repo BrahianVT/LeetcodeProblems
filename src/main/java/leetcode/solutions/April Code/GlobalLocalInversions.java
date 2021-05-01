@@ -3,7 +3,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	4
+	5
 	Number leecode problem:775
 	https://leetcode.com/problems/global-and-local-inversions/
     Time Complexity: O(n) 
