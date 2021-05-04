@@ -3,7 +3,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	4
+	9
 	Number leecode problem:953
 	https://leetcode.com/problems/verifying-an-alien-dictionary/
     Time Complexity: O(n) 
@@ -12,7 +12,7 @@ import java.util.*;
 public class VerifyingAlienDictionary{
 	
 	public boolean isAlienSorted(String[] words, String order) {
-		int[] map = new char[26];
+		int[] map = new int[26];
 		int i = 0;
 		for(char c: order.toCharArray(order)){
 			map[c - 'a'] = i++;
