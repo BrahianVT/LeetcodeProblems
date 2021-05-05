@@ -2,7 +2,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	11
+	12
 	Number leecode problem:329
 	https://leetcode.com/problems/beautiful-arrangement-ii/
     Time Complexity: O(n) 
