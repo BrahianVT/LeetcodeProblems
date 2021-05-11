@@ -21,6 +21,6 @@ public class FurthestBuildingYouCanReach{
 			if(bricks < 0)
 				return i;
 		}
-		return heights.length -1;
+		return heights.length-1;
 	}
 }
