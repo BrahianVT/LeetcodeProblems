@@ -23,7 +23,7 @@ public class PartitionList{
 			}
 		}
 		s1.next = r2.next;
-		s2.next = null;
+		r2.next = null;
 		return l.next;
     }
 }
