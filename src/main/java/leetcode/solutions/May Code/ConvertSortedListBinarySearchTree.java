@@ -10,7 +10,8 @@ import java.util.*;
 public class ConvertSortedLisBinarySearchTree{
 	
 	public TreeNode sortedListToBST(ListNode head) {
-        
+        if(head == null)return head;
+		return createTree(head);
     }
 	
 	private TreeNode createTree(ListNode head){
