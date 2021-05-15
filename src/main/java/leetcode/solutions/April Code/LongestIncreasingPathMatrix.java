@@ -22,7 +22,7 @@ public class LongestIncreasingPathMatrix{
 		 return res;
 	 }
 	 
-	 private dfs(int[][] matrix, int  i, int j , int[]dp, int cur){
+	 private dfs(int[][] matrix, int  i, int j , int[][] dp, int cur){
 		int n = matrix.length, m = matrix[0].length, res = 0;
 		if(i < 0 || i>= m || j < 0 || j>=n || matrix[i][j] <= cur)return 0;
 		if(dp[i][j] != 0)return dp[i][j];
