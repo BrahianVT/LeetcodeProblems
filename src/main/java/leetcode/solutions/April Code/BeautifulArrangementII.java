@@ -15,7 +15,7 @@ public class BeautifulArrangementII{
 		int[] res = new int[n];
 		for(int t = 0; t < n; t++){
 			res[t] = k%2==0?i++:j--;
-			if(j > 1)j--;
+			if(k > 1)k--;
 		}
 		return res;
 	}
