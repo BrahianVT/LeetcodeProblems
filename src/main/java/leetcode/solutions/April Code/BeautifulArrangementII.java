@@ -13,8 +13,8 @@ public class BeautifulArrangementII{
 	public int[] constructArray(int n, int k) {
 		int i = 1, j = n;
 		int[] res = new int[n];
-		for(int i = 0; i < n; i++){
-			res[i] = k%2==0?i++:j--;
+		for(int t = 0; t < n; t++){
+			res[t] = k%2==0?i++:j--;
 			if(j > 1)j--;
 		}
 		return res;
