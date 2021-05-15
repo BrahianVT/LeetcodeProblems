@@ -24,7 +24,7 @@ public class CombinationSumIV {
 		int res = 0;
 		for(int i = 0; i < nums.length; i++){
 			if(nums[i] <= target)
-				res+= calculate(nums, nums[i]- target, dp);
+				res+= calculate(nums,  target - nums[i], dp);
 			else 
 				break;
 		}
