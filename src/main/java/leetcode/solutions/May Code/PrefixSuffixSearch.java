@@ -5,8 +5,7 @@ import java.util.*;
 	1
 	Number leecode problem: 745
 	https://leetcode.com/problems/prefix-and-suffix-search/
-    Time Complexity: O(n) 
-    Space Complexity: O(n)
+    
 */    
 
 
@@ -38,7 +37,7 @@ public class PrefixSuffixSearch{
 		int res = startsWith(prefix, start + 1, root.children[id]);
 		return res;
 	}
-    public WordFilter(String[] words) {
+    public void WordFilter(String[] words) {
         for(int i = 0; i < words.length; i++){
 			String s = words[i];
 			for(int j = 0; j <= s.length(); j++){

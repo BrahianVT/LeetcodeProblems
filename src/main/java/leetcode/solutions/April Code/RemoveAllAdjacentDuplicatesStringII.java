@@ -17,7 +17,7 @@ public class RemoveAllAdjacentDuplicatesStringII{
 			isRemove = false;
 			int i = 1, freq = 1; char c = 'a'; if(res.length() != 0) c = s.charAt(0);
 			while(i < res.length()){
-				if(c == res.length()){
+				if(c == s.charAt(i)){
 					freq++, i++; continue;
 				} else {
 					if(freq == k){
