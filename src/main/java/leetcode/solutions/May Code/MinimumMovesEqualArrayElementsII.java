@@ -3,8 +3,8 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	19
-	Number leecode problem: 609
-	https://leetcode.com/problems/find-duplicate-file-in-system/
+	Number leecode problem: 462
+	https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
 	Time Complexity: O(nlogn)
 	Space Complexity: O(n)
 */   
