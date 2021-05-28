@@ -2,7 +2,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	23
+	22
 	Number leecode problem: 51
 	https://leetcode.com/problems/n-queens/
 	Time Complexity: O(n^2)
