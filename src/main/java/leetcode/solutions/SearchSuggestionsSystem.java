@@ -16,7 +16,7 @@ public class SearchSuggestionsSystem{
 			sub.append(searchWord.charAt(i));
 			int start = getIndex(products, sub.toString());
 			List<String> aux = new ArrayList();
-			if(start == products.length){for(; i < searchWord.length; i++) res.add(new ArrayList(aux)); continue; }
+			if(start == products.length){for(; i < searchWord.length(); i++) res.add(new ArrayList(aux)); continue; }
 			for(; start < products.length && products[start].indexOf(sub.toString()) != -1 && aux.size() < 3; start++)
 				aux.add(products[start]);
 			
@@ -26,11 +26,11 @@ public class SearchSuggestionsSystem{
 	}
 	
 	private int getIndex(String[] products, String pat){
-		int s = 0, end = products.length, lenPa = products.length;
+		int s = 0, end = products.length;
 		while(s < end){
 			int m = (end + s)/2;
 			int lenPr =  products[m].length;
-			if(products[m].substring(0, lenPr > lenPa?lenPa:lenPr).compareTo(pat) >= 0)
+			if(products[m].compareTo(pat) >= 0)
 				end = m;
 			else
 				s = m + 1;
