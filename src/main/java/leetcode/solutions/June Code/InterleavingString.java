@@ -3,8 +3,8 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Problem : 1
-	Number leecode problem: 695
-	https://leetcode.com/problems/max-area-of-island/
+	Number leecode problem: 97
+	https://leetcode.com/problems/interleaving-string/
     Time Complexity: O(n*m) 
     Space Complexity: O(n)
 */
