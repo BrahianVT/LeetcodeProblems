@@ -19,7 +19,7 @@ public class FindDuplicateFileSystem{
                 int j = w.indexOf("(");
                 String aux = w.substring(j+1, w[i].length - 1);
                 
-                map.computeIfAbsent(w[i], v -> new ArrayList()).add(w[0] + "/" + w[i].substring(j));
+                map.computeIfAbsent(aux, v -> new ArrayList()).add(w[0] + "/" + w[i].substring(j));
             }
         }
         
