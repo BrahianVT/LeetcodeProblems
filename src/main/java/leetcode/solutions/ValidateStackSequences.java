@@ -1,8 +1,8 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Number leecode problem: 946
-	https://leetcode.com/problems/validate-stack-sequences/
+	Number leecode problem: 1376
+	https://leetcode.com/problems/time-needed-to-inform-all-employees/
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
