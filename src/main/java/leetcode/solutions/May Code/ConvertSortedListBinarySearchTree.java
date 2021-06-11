@@ -17,7 +17,7 @@ public class ConvertSortedLisBinarySearchTree{
 	private TreeNode createTree(ListNode head){
 		ListNode fast = head;
 		ListNode slow = head, pre = null;
-		while(fast != null || fast.next != null){
+		while(fast != null && fast.next != null){
 			pre = slow;
 			fast = fast.next.next;
 			slow = slow.next;

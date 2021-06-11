@@ -20,7 +20,7 @@ public class MaximumPointsYouCanObtainFromCards{
 		int res = sum - window;
 		for(int i = 1; i <= cardPoints.length - ws; i++){
 			window = window - cardPoints[i - 1] + cardPoints[i + ws - 1];
-			res = Math.res(res, sum - window);
+			res = Math.max(res, sum - window);
 		}
 		return res;
     }
