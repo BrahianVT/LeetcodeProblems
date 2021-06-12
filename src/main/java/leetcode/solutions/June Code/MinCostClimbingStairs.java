@@ -3,7 +3,7 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Problem : 7
-	Number leecode problem: 128
+	Number leecode problem: 746
 	https://leetcode.com/problems/min-cost-climbing-stairs/
     Time Complexity: O(n) 
     Space Complexity: O(0)
