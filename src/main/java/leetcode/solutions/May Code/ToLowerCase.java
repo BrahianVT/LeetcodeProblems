@@ -14,7 +14,7 @@ public class ToLowerCase{
         char[] c = s.toCharArray();
 		
 		for(char i : c){
-			if(c >= 'A' && c <= 'Z')i+=32;
+			if(i >= 'A' && i <= 'Z')i+=32;
 		}
 		
 		return String.valueOf(c);
