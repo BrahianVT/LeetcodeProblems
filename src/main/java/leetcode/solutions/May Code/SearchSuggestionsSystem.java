@@ -34,7 +34,7 @@ public class SearchSuggestionsSystem{
 		while(s < end){
 			int m = (s + end) /2;
 			
-			if(products[m].compareTo() >= 0)
+			if(products[m].compareTo(pattern) >= 0)
 				end = m;
 			else
 				s = m + 1;
