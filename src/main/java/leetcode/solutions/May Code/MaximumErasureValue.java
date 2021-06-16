@@ -18,12 +18,12 @@ public class MaximumErasureValue{
 		Arrays.fill(map, -1);
 		for(int i = 0, j = 0; i < nums.length && j < nums.length;){
 			if(map[nums[i]]){
+				map[nums[j]] = false;
 				aux-=nums[j++];
-				map[nums[i]] = false;
 			} else {
 				map[nums[i]] = true;
 				aux+=nums[i++];
-				res = Math.res(res, aux);
+				res = Math.max(res, aux);
 			}
 		}
 		return res;
