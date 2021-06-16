@@ -21,7 +21,7 @@ public class NQueensII{
 		for(int i = 0; i < n; i++){
 			if(visited[i] || (i == 0 && prev == i +1) ||(i == n-1 && prev == i-1) ||(i > 0 && i < n-1 && (i == prev-1 || i == prev+1)) && !isVal(cont, i))continue;
 			visited[i] = true;
-			co.add(new int[]{i,j});
+			co.add(new int[]{cont,j});
 			res+= back(cont + 1, n, visited, co, i);
 			visited[i] = false;
 			co.remove(co.size() - 1);
