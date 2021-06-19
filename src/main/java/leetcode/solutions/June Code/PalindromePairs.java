@@ -6,8 +6,7 @@ import java.util.*;
 	Problem : 13
 	Number leecode problem: 336
 	https://leetcode.com/problems/palindrome-pairs/
-    Time Complexity: O(n) 
-    Space Complexity: O(n)
+
 */
 
 
