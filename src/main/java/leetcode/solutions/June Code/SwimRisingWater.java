@@ -22,7 +22,7 @@ public class  SwimRisingWater{
 		boolean[][] used = new boolean[n][n];
 		
 		used[0][0] = true;
-		while(pq.size()){
+		while(!pq.isEmpty()){
 				int[] aux = pq.poll(), max = aux[2];
 				for(int k = 0; k < 4; k++){
 					int a = aux[0] + coor[k][0], b = aux[1] + coor[k][1];
