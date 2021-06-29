@@ -3,7 +3,7 @@ import java.util.*;
 /*
 	26
 	Number leecode problem: 1689
-	https://leetcode.com/problems/evaluate-reverse-polish-notation/
+	https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/
 	Time Complexity: O(n)
 	Space Complexity: O(1)
 */
