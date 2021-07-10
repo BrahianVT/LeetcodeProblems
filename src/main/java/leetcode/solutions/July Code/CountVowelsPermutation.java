@@ -4,8 +4,8 @@ import java.util.*;
 	Problem : 4
 	Number leecode problem: 1220
 	https://leetcode.com/problems/count-vowels-permutation/
-    Time Complexity: O() 
-    Space Complexity: O()
+    Time Complexity: O(n) 
+    Space Complexity: O(1)
 */
 
 public class CountVowelsPermutation{
