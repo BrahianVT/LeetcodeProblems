@@ -3,7 +3,7 @@ import java.util.*;
 /*
 	Problem : 5
 	Number leecode problem: 566
-	https://leetcode.com/problems/count-vowels-permutation/
+	https://leetcode.com/problems/reduce-array-size-to-the-half/
     Time Complexity: O(nm) 
     Space Complexity: O(nm)
 */
