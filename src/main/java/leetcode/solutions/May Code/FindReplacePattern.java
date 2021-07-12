@@ -14,6 +14,7 @@ public class FindReplacePattern{
 	public List<String> findAndReplacePattern(String[] words, String pattern) {
         
 		int[] map = new int[26];
+		Arrays.fill(map2,-1);
 		List<String> res = new ArrayList();
 		for(String w : words){
 			boolean match =true; 
