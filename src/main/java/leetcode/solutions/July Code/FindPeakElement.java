@@ -4,8 +4,8 @@ import java.util.*;
 	Problem : 13
 	Number leecode problem: 162
 	https://leetcode.com/problems/isomorphic-strings/
-    Time Complexity: O(n log n) 
-    Space Complexity: O()
+    Time Complexity: O(log n) 
+    Space Complexity: O(1)
 */
 	public class FindPeakElement{
 		public int findPeakElement(int[] nums) {
