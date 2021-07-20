@@ -4,7 +4,7 @@ import java.util.*;
 /*
 	Problem : 26
 	Number leecode problem: 315
-	https://leetcode.com/problems/out-of-boundary-paths/
+	https://leetcode.com/problems/count-of-smaller-numbers-after-self/
     Time Complexity: O(nlog n) 
     Space Complexity: O(n)
 */
@@ -21,10 +21,11 @@ public class  CountSmallerNumbersAfterSelf{
 	}
 	
 	private void mergeSort(int[] nums, int[] index, int[] res, int s, int e){
-		if(s >= end) return;
-		int m = (end + s) / 2;
+		if(s >= e) return;
+		int m = (e + s) / 2;
 		mergerSort(nums, index, res, s, m);
 		mergerSort(nums, index, res, m+1, e);
+		mergeEle(nums, index, res, s, m, m+1, e);
 	}
 	
 	private void mergeEle(int[] nums, int[] index, int[] res, int l1, int r1, int, l2, int r2){
