@@ -16,8 +16,8 @@ public class NumberSubarraysBoundedMaximum{
 	public int numSubarrayBoundedMax(int[] nums, int left, int right) {
         int res = 0, sum = 0,a = 0;
 		for(int i = 0; i < nums.length; i++){
-			if(n > right){ sum = 0;  a = i + 1;}
-			else if(n >= left){
+			if(nums[i] > right){ sum = 0;  a = i + 1;}
+			else if(nums[i] >= left){
 				sum = i - a + 1;
 			}
 			res += sum;
