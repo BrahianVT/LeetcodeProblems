@@ -3,8 +3,8 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Problem : 927
-	Number leecode problem: 205
+	Problem : 17
+	Number leecode problem: 927
 	https://leetcode.com/problems/three-equal-parts/submissions/
     Time Complexity: O(n) 
     Space Complexity: O(1)
