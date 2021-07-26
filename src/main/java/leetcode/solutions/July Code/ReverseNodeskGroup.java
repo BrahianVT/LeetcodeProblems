@@ -30,7 +30,7 @@ public class ReverseNodeskGroup{
 			 for(int i = 1; i < k; i++){
 				 cur.next = nex.next;
 				 nex.next = prev.next;
-				 prev.next = next;
+				 prev.next = nex;
 				 nex = cur.next;
 			 }
 			 prev = cur;
