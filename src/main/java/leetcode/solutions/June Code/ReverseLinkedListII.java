@@ -24,6 +24,7 @@ public class ReverseLinkedListII{
 		while(cur != r){
 			ListNode next = cur.next;
 			cur.next = prev;
+			prev = cur; 
 			cur = next;
 		}
 		cur.next = prev;
