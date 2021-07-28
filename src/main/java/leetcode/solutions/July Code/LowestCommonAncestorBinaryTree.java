@@ -3,8 +3,8 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Problem : 19
-	Number leecode problem: 927
-	https://leetcode.com/problems/three-equal-parts/submissions/
+	Number leecode problem: 236
+	https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
     Time Complexity: O(n) 
     Space Complexity: O(1)
 */
