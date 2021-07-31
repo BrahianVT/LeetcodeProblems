@@ -6,7 +6,7 @@ import java.util.*;
 	Problem : 27
 	Number leecode problem: 16
 	https://leetcode.com/problems/3sum-closest/
-    Time Complexity: O(n3)
+    Time Complexity: O(n2)
     Space Complexity: O(n)
 */
 
