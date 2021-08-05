@@ -32,7 +32,7 @@ public class ReduceArraySizeHalf{
 		int cont = n;;
 		iLen = 0;
 		while(cont > n/2){
-			cont-= len[iLen];
+			cont-= len[iLen++];
 		}
 		
 		return iLen;
