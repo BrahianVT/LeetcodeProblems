@@ -17,7 +17,7 @@ public class StoneGame{
 		
 		for(int d = 1; d < n; d++){
 			for(int i = 0; i < n-d; i++){
-				dp[i][i + d] = Math.max(p[i] - dp[i +1][i + d], p[i + d] - dp[i][i - d - i]);
+				dp[i][i + d] = Math.max(p[i] - dp[i +1][i + d], p[i + d] - dp[i][i - d - 1]);
 			}
 		}
     }
