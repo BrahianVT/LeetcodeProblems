@@ -16,6 +16,7 @@ public class Matrix01{
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[0].length; j++){
 				if(mat[i][j] == 1)q.add(new int[]{i,j});
+				else matrix[i][j] = Integer.MAX_VALUE;
 			}
 		}
 			
