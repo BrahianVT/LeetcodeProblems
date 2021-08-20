@@ -21,13 +21,13 @@ public class  PalindromePartitioningII {
 		for(int i = 0; i < n; i++){
 			 min = i;
 			for(int j = 0; j <= i; j++){
-				if(c[i] == c[j] && (i -j < 3 || p[j+1][i-1])){
-					p[j][i] = true;
+				if(c[i] == c[j] && (i -j < 3 || dp[j+1][i-1])){
+					dp[j][i] = true;
 					min = j == 0?0:Math.min(min, cut[j-1] + 1);
 				}
 			}
 			cut[i] = min;
 		}
-		return n;
+		return min;
 	}
 }
