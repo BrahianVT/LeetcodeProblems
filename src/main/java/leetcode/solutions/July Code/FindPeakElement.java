@@ -3,7 +3,7 @@ import java.util.*;
 /*
 	Problem : 13
 	Number leecode problem: 162
-	https://leetcode.com/problems/isomorphic-strings/
+	https://leetcode.com/problems/find-peak-element/
     Time Complexity: O(log n) 
     Space Complexity: O(1)
 */
