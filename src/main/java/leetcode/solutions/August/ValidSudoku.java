@@ -4,8 +4,8 @@ import java.util.*;
 	Problem : 20
 	Number leecode problem: 36
 	https://leetcode.com/problems/valid-sudoku/
-    Time Complexity: O(n)
-    Space Complexity: O(n)
+    Time Complexity: O(1)
+    Space Complexity: O(1)
 */
 
 public class ValidSudoku{
