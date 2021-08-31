@@ -6,7 +6,7 @@ import java.util.*;
 /*
 	Problem : 18
 	Number leecode problem: 927
-	https://leetcode.com/problems/three-equal-parts/submissions/
+	https://leetcode.com/problems/reverse-nodes-in-k-group/
     Time Complexity: O(n) 
     Space Complexity: O(1)
 */

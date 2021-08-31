@@ -4,7 +4,7 @@ import java.util.*;
 /*
 	Problem : 6
 	Number leecode problem: 1338
-	https://leetcode.com/problems/count-vowels-permutation/
+	https://leetcode.com/problems/reduce-array-size-to-the-half/
     Time Complexity: O(n log n) 
     Space Complexity: O(n)
 */

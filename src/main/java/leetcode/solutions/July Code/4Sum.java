@@ -18,7 +18,7 @@ public class 4Sum{
 		
 		for(int a = 0; a <= nums.length-4; a++){
 			if(a > 0 && nums[a] == nums[a-1])continue;
-			for(int b = b+1; b <= nums.length-3; b++){
+			for(int b = a+1; b <= nums.length-3; b++){
 				if(b > 1 && nums[b] == nums[b-1] && b-1 != a)continue;
 				int c = b + 1, d = nums.length -1;
 				while(c < d){
