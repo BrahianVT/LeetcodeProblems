@@ -3,7 +3,7 @@ import java.util.*;
 /*
 	Problem : 28
 	Number leecode problem: 1235
-	https://leetcode.com/problems/longest-uncommon-subsequence-ii/
+	https://leetcode.com/problems/maximum-profit-in-job-scheduling/
     Time Complexity: O(n)
     Space Complexity: O(n)
 */
