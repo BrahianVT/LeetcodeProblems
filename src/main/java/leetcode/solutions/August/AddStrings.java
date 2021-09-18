@@ -11,7 +11,7 @@ import java.util.*;
 public class  AddStrings{
 	public String addStrings(String num1, String num2) {
 		StringBuilder res =  new StringBuilder();
-		 int i = num1.length()-1, num2.length()-1;
+		 int i = num1.length()-1, j = num2.length()-1;
 		 int sum = 0;
 		 while( i >= 0 || j >= 0){
 			 if(i >= 0)sum+=num1.charAt(i--) - '0';

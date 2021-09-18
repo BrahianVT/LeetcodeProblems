@@ -20,7 +20,7 @@ public class FlipStringMonotoneIncreasing{
 			if(c[i - 1] == '1')
 				ones++;
 			else
-				res = Math.max(res + 1, ones);
+				res = Math.min(res + 1, ones);
 		}
 		
 		return res;

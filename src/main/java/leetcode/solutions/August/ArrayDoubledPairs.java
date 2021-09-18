@@ -19,7 +19,7 @@ public class  ArrayDoubledPairs{
 
 		int three = 0;
 		for(int n: arr){
-			n+= three;
+			three+= n;
 			map.put(n, map.getOrDefault(n, 0) + 1);
 		}
 		
