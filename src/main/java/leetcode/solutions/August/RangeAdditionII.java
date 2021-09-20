@@ -16,7 +16,7 @@ public class  RangeAdditionII{
 		
 		for(int o[]: ops){
 			minX = Math.min(minX, o[0]);
-			minY = Math.min(minY, o[1|]);
+			minY = Math.min(minY, o[1]);
 		}
 
 		return minX * minY;		
