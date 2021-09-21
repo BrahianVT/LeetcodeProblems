@@ -13,6 +13,8 @@ public class RemoveBoxes{
 	public int removeBoxes(int[] boxes) {
         int n = boxes.length;
 		int[][][] dp = new int[n][n][n];
+		
+		return removeBoxesSub(boxes, 0, n-1, 0, dp);
     }
 	
 	private int removeBoxesSub(int[] boxes, int i, int j, int k, int[][][] dp){
