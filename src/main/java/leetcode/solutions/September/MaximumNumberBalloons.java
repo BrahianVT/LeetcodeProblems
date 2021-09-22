@@ -3,8 +3,8 @@ package leetcode.solutions;
 import java.util.*;
 /*
 	Problem : 13
-	Number leecode problem: 882
-	https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/
+	Number leecode problem: 1189
+	https://leetcode.com/problems/maximum-number-of-balloons/
     Time Complexity: O(n)
     Space Complexity: o(n)
 */
