@@ -2,7 +2,7 @@
 package leetcode.solutions;
 import java.util.*;
 /*
-	Problem : 26
+	Problem : 25
 	Number leecode problem: 1293
 	https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
     Time Complexity: O(nm)
